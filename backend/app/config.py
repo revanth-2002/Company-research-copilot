@@ -12,7 +12,7 @@ class Settings(BaseSettings):
     gemini_api_key: str = os.getenv("GEMINI_API_KEY")
     gemini_model: str = os.getenv("GEMINI_MODEL", "gemini-3.5-flash")
     clerk_domain: str = os.getenv("CLERK_DOMAIN")
-    cors_origins: str = "http://localhost:5173, http://localhost:8000"
+    cors_origins: str = "https://company-research-copilot.vercel.app"
 
     model_config = SettingsConfigDict(env_file=".env", extra="ignore")
 
