@@ -293,8 +293,7 @@ function SessionApp() {
         <div className="brand">
           <Bot size={24} />
           <div>
-            <strong>Research Copilot</strong>
-            <span>ZyLabs</span>
+            <strong>AI Research Copilot</strong>
           </div>
         </div>
 

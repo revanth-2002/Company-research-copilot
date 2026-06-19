@@ -1,3 +1,6 @@
+# create .venv and activate it before running this code
+# pip install -r requirements.txt
+
 from __future__ import annotations
 
 import json

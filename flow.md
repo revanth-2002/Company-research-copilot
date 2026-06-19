@@ -1,6 +1,6 @@
 # Research Copilot Session Flow
 
-This document describes the execution flow for one session run in the ZyLabs Research Copilot application.
+This document describes the execution flow for one session run in the AI Research Copilot application.
 
 ## 1. Frontend submits the research request
 - `App.createSession()` is called when the user submits the research form.

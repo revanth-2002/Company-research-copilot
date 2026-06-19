@@ -1,6 +1,6 @@
-# ZyLabs AI Research Copilot
+#  AI Research Copilot
 
-A production-minded full-stack AI research copilot for preparing sellers and business teams for account meetings.
+A  full-stack AI research copilot for preparing sellers and business teams for account meetings.
 
 The app lets a user create a research session with a company, website, and objective. A FastAPI backend runs a multi-node LangGraph workflow, persists intermediate outputs in MongoDB, streams live session updates over WebSocket, returns a structured briefing report, and supports follow-up chat grounded in the generated report. Authentication is handled by Clerk.
 

@@ -1,6 +1,6 @@
 # Follow-up Chat API Flow
 
-This document describes the streaming follow-up chat flow for the ZyLabs Research Copilot, including API behavior, SSE events, DB interactions, frontend handling, error cases, and suggested improvements.
+This document describes the streaming follow-up chat flow for the AI Research Copilot, including API behavior, SSE events, DB interactions, frontend handling, error cases, and suggested improvements.
 
 ## Goals
 - Provide a responsive UX where the assistant shows a loading/flicker placeholder when a follow-up question is asked.
