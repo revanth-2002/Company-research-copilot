@@ -19,6 +19,7 @@ from .events import subscribe_session, unsubscribe_session
 from .logger import get_logger, setup_logging
 from .models import ChatRequest, ChatResponse, SessionCreate, SessionDetail, SessionSummary
 from .workflow.graph import answer_followup, run_research_workflow
+import os
 
 settings = get_settings()
 logger = get_logger("main")
@@ -38,9 +39,11 @@ async def lifespan(app: FastAPI):
 
 app = FastAPI(title=settings.app_name, lifespan=lifespan)
 
+frontend_url = os.getenv("FRONTEND_URL", "http://localhost:5173")
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://company-research-copilot-48tw1swnz-revanth2909.vercel.app"],
+    allow_origins=[frontend_url],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
