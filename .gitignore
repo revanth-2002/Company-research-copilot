@@ -14,3 +14,7 @@ dist/
 # Environment
 .env
 .env.*
+
+#logs
+logs/
+*.log
